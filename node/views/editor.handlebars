@@ -1,0 +1,19 @@
+<div class="card mt-4">
+    <div class="card-body">
+        <form action="/admin/alterado" method="POST" class="mt-4">
+
+                <label for="Nome">Nome:</label>
+                    <input type="text " name="Nome" class="form-control" value="{{modelo.Nome}}">
+                    <input type="hidden" name="_id" value="{{modelo._id}}">
+                    
+                <br>
+                <label for="Senha">Senha:</label>
+                <br>
+                    <input type="text" name="Senha" class="form-control" value="{{modelo.Senha}}">
+                <br>
+                    <button type="submit" class="btn btn-success mt-4">Alterar cadastro</button>
+        </form>
+
+    </div>
+</div>
+

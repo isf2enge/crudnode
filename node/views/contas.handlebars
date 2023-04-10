@@ -1,0 +1,18 @@
+{{#each modelo}}
+
+    <div class="card mt-4">
+        <div class="card-body">
+            <label for="Nome:">Nome:</label>
+            <br>
+            <div class="container">{{Nome}}</div>
+            <br>
+            <label for="Senha">Senha:</label>
+            <br>
+            <div class="container">{{Senha}}</div>
+            <br>
+            <a href="/admin/edit/{{_id}}"><button type="submit" class="btn btn-success">Editar</button></a>
+            <button type="submit" class="btn btn-danger">Deletar</button>
+        </div>
+    </div>
+
+{{/each}}
